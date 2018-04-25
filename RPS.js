@@ -1,10 +1,11 @@
 $(document).ready(function(){
     $("select").imagepicker({
-         hide_select:  false,
+        //Image Picker settings
+        hide_select:  false,
         show_label:   true,
     });
 
-    
+    //This is the area where I am trying to pull the value that the imagepicker sends me
     $("select").data('picker');
     
     var choice = "";
