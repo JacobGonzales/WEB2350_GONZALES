@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" type="text/css" href="RPS.css">
+    <link rel="stylesheet" type="text/css" href="image-picker/image-picker.css">
+    
+        <!--jQuery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="RPSTwistTwo.js"></script>
+        <script src="image-picker/image-picker.js"></script>
+
+</head>
+<body>
+    <div id="Done">
+        <div id="scores">
+            <a href="index.html">Go Back</a>
+            <h3>The Game: Rock, Paper, Scissors</h3>
+            <p>
+                You will be playing against a Computer. <br>
+                Here are the rules: <br><br>
+                Rock beats Scissors <br>
+                Paper beats Rock <br>
+                Scissors beats Paper <br>
+                Anything Else Will Result in a Tie.<br>
+                <br>
+                The Twist #2:
+                <br><br>
+                Play RPS against a growing sequence of computer throws with a timer. At first, the computer shows you one throw, say rock. Then you choose paper to defeat her (my computer is a ‘she’, btw). Then for the 2nd sequence, the computer will show you the same rock again, but this time followed by, say, paper. Now you must choose paper and then scissors to defeat the computer’s sequence. The sequence will continue to grow. How many sequences (and how fast) can you maintain your concentration in this RPS version of the classic game of Simon?  
+                <br><br>
+                You will have 30 Seconds. Timer Starts when you press on any of the pictures below...
+                
+<!--Incorporate a high score and fastest time display as well, and notify the user if they achieved the high score (with the fastest time) at the end of the game.<br>-->
+            </p>
+        </div>
+        <div>
+            <h4>Computer has chosen:</h4>
+            <div id="computerPick">
+            </div>
+            <h4>You Must:</h4>
+            <div id="computerPickTwo">
+            </div>
+        </div>
+        <div class="picker">
+            <select class="image-picker show-labels">
+                <option id="FirstImage" data-img-src="images/rock.jpg" value="1">Rock</option>
+                <option data-img-src="images/paper.jpg" value="2">Paper</option>
+                <option data-img-src="images/scissors.jpg" value="3">Scissors</option>
+            </select>
+        </div>
+    </div>
+</body>
+</html>
